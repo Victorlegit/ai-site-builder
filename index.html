@@ -3,122 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goe Health - Your Partner in Wellness</title>
-    <meta name="description" content="Goe Health is dedicated to providing comprehensive and compassionate healthcare services to our community. Discover our expert care and commitment to your well-being.">
+    <title>GoEserve - AI-Powered Business Solutions</title>
+    <meta name="description" content="Turn your business into an AI-powered machine with GoEserve. Create websites, automate workflows, and scale faster.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .gradient-background {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        /* Custom scroll behavior */
+        html {
+            scroll-behavior: smooth;
         }
-        .hover-effect:hover {
+
+        /* Subtle hover effects */
+        .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        .feature-icon {
-            transition: transform 0.3s ease-in-out;
+
+        .cta-button:hover {
+            transform: translateY(-2px);
         }
-        .feature-card:hover .feature-icon {
-            transform: scale(1.1);
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
-<body class="font-sans antialiased">
+<body class="font-sans bg-gray-50 text-gray-900">
 
-    <!-- HERO SECTION -->
-    <section class="gradient-background text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Empowering Your Journey to Optimal Health</h1>
-            <p class="text-lg sm:text-xl lg:text-2xl mb-8">Goe Health: Personalized care, advanced treatments, and a commitment to your well-being. Experience the difference of a healthcare partner that truly cares.</p>
-            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-100 transition duration-300 shadow-lg">Schedule Your Appointment</button>
-        </div>
-    </section>
-
-    <!-- FEATURES SECTION -->
-    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Comprehensive Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
-                    <div class="feature-icon text-5xl mb-4 text-blue-600">❤️</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Preventive Care</h3>
-                    <p class="text-gray-600">Proactive health screenings and wellness programs designed to keep you healthy and prevent future issues.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20 md:py-32 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0 aos-init aos-animate" data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Turn Your Business Into an AI-Powered Machine</h1>
+                <p class="text-lg md:text-xl mb-8">Create websites, automate workflows, and scale faster with GoEserve.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out cta-button">Get Started Free</a>
+                    <a href="#" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 ease-in-out cta-button">See Demo</a>
                 </div>
-
-                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
-                    <div class="feature-icon text-5xl mb-4 text-green-600">⚕️</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Specialty Treatments</h3>
-                    <p class="text-gray-600">Expertise in various medical fields, offering advanced diagnostics and tailored treatment plans for your specific needs.</p>
-                </div>
-
-                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
-                    <div class="feature-icon text-5xl mb-4 text-purple-600">💬</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Patient Education</h3>
-                    <p class="text-gray-600">Empowering you with knowledge about your health, treatment options, and lifestyle choices for better outcomes.</p>
-                </div>
-
-                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
-                    <div class="feature-icon text-5xl mb-4 text-indigo-600">🧑‍⚕️</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Medical Team</h3>
-                    <p class="text-gray-600">Our dedicated and experienced healthcare professionals are here to provide compassionate and effective care.</p>
-                </div>
-
-                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
-                    <div class="feature-icon text-5xl mb-4 text-teal-600">🏥</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Modern Facilities</h3>
-                    <p class="text-gray-600">State-of-the-art medical equipment and comfortable facilities to ensure the best possible patient experience.</p>
-                </div>
-
-                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
-                    <div class="feature-icon text-5xl mb-4 text-red-600">🤝</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Community Focus</h3>
-                    <p class="text-gray-600">We are deeply invested in the health and well-being of our local community, offering accessible and reliable care.</p>
-                </div>
-
+            </div>
+            <div class="md:w-1/2 aos-init aos-animate" data-aos="fade-left">
+                <img src="https://via.placeholder.com/600x400/FFFFFF/000000?text=GoEserve+Dashboard" alt="GoEserve Dashboard Placeholder" class="rounded-lg shadow-2xl w-full">
             </div>
         </div>
     </section>
 
-    <!-- CALL TO ACTION SECTION -->
-    <section class="gradient-background text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Prioritize Your Health?</h2>
-            <p class="text-lg sm:text-xl mb-8">Don't wait to take control of your well-being. Our team is ready to assist you with expert care and personalized attention. Your health journey starts now!</p>
-            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-100 transition duration-300 shadow-lg">Get Started Today</button>
+    <!-- Problem Section -->
+    <section id="problem" class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Struggling to Keep Up?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <span class="text-4xl mb-4 inline-block">🌐</span>
+                    <h3 class="text-xl font-semibold mb-2">No Online Presence</h3>
+                    <p class="text-gray-600">Many small businesses lack a professional website, missing out on potential customers.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <span class="text-4xl mb-4 inline-block">⚙️</span>
+                    <h3 class="text-xl font-semibold mb-2">Manual Operations</h3>
+                    <p class="text-gray-600">Time-consuming manual tasks drain resources and lead to inefficiencies.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <span class="text-4xl mb-4 inline-block">💰</span>
+                    <h3 class="text-xl font-semibold mb-2">Expensive Development</h3>
+                    <p class="text-gray-600">Hiring developers or agencies can be prohibitively expensive for small businesses.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- FOOTER SECTION -->
-    <footer class="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Solution Section -->
+    <section id="solution" class="bg-gradient-to-r from-blue-50 to-purple-50 py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">GoEserve: Your AI Business Partner</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">We leverage the power of AI to simplify your business operations. GoEserve empowers you to create stunning websites effortlessly and automate complex workflows, freeing you to focus on growth.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Powerful Features for Your Business</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out cursor-pointer">
+                    <span class="text-4xl mb-4 inline-block">✨</span>
+                    <h3 class="text-xl font-semibold mb-2">AI Website Builder</h3>
+                    <p class="text-gray-600">Generate a professional website in minutes with our intelligent AI.</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out cursor-pointer">
+                    <span class="text-4xl mb-4 inline-block">🤖</span>
+                    <h3 class="text-xl font-semibold mb-2">Automation Workflows</h3>
+                    <p class="text-gray-600">Connect apps and automate repetitive tasks without coding.</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out cursor-pointer">
+                    <span class="text-4xl mb-4 inline-block">💬</span>
+                    <h3 class="text-xl font-semibold mb-2">Chatbot Integration</h3>
+                    <p class="text-gray-600">Engage customers seamlessly via WhatsApp and Telegram.</p>
+                </div>
+                <div class="feature-card bg-white p-6 rounded-lg shadow-md transition duration-300 ease-in-out cursor-pointer">
+                    <span class="text-4xl mb-4 inline-block">📊</span>
+                    <h3 class="text-xl font-semibold mb-2">Simple Dashboard</h3>
+                    <p class="text-gray-600">Manage everything from a clean, intuitive interface.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 px-4 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Get Started in 3 Simple Steps</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Enter Details</h3>
+                    <p class="text-gray-700">Provide basic information about your business.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">AI Builds System</h3>
+                    <p class="text-gray-700">Our AI crafts your website and sets up automations.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Launch & Grow</h3>
+                    <p class="text-gray-700">Go live and start attracting customers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Perfect for Every Business</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">Restaurants</span>
+                <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded">Freelancers</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">SMEs</span>
+                <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded">Churches</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">Non-profits</span>
+                <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded">Consultants</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="bg-gradient-to-r from-blue-50 to-purple-50 py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">See GoEserve in Action</h2>
+            <p class="text-lg text-gray-700 mb-8">Watch our demo to understand the full capabilities of GoEserve.</p>
+            <div class="relative w-full max-w-4xl mx-auto aspect-video bg-gray-300 rounded-lg shadow-xl overflow-hidden flex items-center justify-center">
+                <span class="text-6xl text-gray-500">▶️</span>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <img src="https://via.placeholder.com/800x450/CCCCCC/000000?text=Demo+Video+Preview" alt="Demo Video Placeholder" class="w-full h-full object-cover">
+                    <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-4 shadow-lg animate-pulse">
+                        <svg class="w-12 h-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">“GoEserve completely transformed how we operate. Our new AI-powered website attracts more clients than ever before!”</p>
+                    <p class="font-bold">- Sarah Chen, Owner of Bloom Cafe</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">“The automation features are a lifesaver. I save hours each week on administrative tasks, letting me focus on my clients.”</p>
+                    <p class="font-bold">- Mark Johnson, Freelance Designer</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic mb-4">“Building our church website was so easy with GoEserve. The AI suggestions were spot on!”</p>
+                    <p class="font-bold">- Pastor Emily Carter, Community Church</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-gradient-to-r from-blue-50 to-purple-50 py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Flexible Plans for Every Need</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Free Plan -->
+                <div class="plan-card bg-white p-8 rounded-lg shadow-md flex flex-col justify-between transition duration-300 ease-in-out">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Free</h3>
+                        <p class="text-4xl font-bold mb-6">$0<span class="text-lg font-medium">/mo</span></p>
+                        <ul class="text-left mb-8 space-y-2 text-gray-700">
+                            <li><span class="font-semibold">✓</span> Basic AI Website Builder</li>
+                            <li><span class="font-semibold">✓</span> Limited Automation</li>
+                            <li><span class="font-semibold">✓</span> Community Support</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg w-full text-center hover:bg-gray-300 transition duration-300 ease-in-out">Choose Plan</a>
+                </div>
+
+                <!-- Starter Plan (Most Popular) -->
+                <div class="plan-card bg-blue-600 text-white p-8 rounded-lg shadow-xl flex flex-col justify-between transition duration-300 ease-in-out relative">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-blue-800 text-xs font-bold px-3 py-1 rounded-bl-lg">MOST POPULAR</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                        <p class="text-4xl font-bold mb-6">$29<span class="text-lg font-medium">/mo</span></p>
+                        <ul class="text-left mb-8 space-y-2">
+                            <li><span class="font-semibold">✓</span> Advanced AI Website Builder</li>
+                            <li><span class="font-semibold">✓</span> Unlimited Automation Workflows</li>
+                            <li><span class="font-semibold">✓</span> Chatbot Integration</li>
+                            <li><span class="font-semibold">✓</span> Priority Support</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg w-full text-center hover:bg-blue-100 transition duration-300 ease-in-out">Choose Plan</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="plan-card bg-white p-8 rounded-lg shadow-md flex flex-col justify-between transition duration-300 ease-in-out">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Pro</h3>
+                        <p class="text-4xl font-bold mb-6">$79<span class="text-lg font-medium">/mo</span></p>
+                        <ul class="text-left mb-8 space-y-2 text-gray-700">
+                            <li><span class="font-semibold">✓</span> All Starter Features</li>
+                            <li><span class="font-semibold">✓</span> Dedicated Account Manager</li>
+                            <li><span class="font-semibold">✓</span> Custom Integrations</li>
+                            <li><span class="font-semibold">✓</span> Premium Support</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg w-full text-center hover:bg-gray-300 transition duration-300 ease-in-out">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Supercharge Your Business?</h2>
+            <p class="text-lg md:text-xl mb-10">Join thousands of businesses already scaling with GoEserve. Start your free trial today!</p>
+            <a href="#" class="bg-white text-blue-600 font-bold py-4 px-10 rounded-lg shadow-lg hover:shadow-xl text-xl transition duration-300 ease-in-out cta-button">Start Your Free Trial Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4">
+        <div class="container mx-auto grid md:grid-cols-3 gap-8">
             <div>
-                <h4 class="text-white font-bold text-lg mb-4">Goe Health</h4>
-                <p class="mb-2">123 Health Lane</p>
-                <p class="mb-2">Wellness City, WC 45678</p>
-                <p>(123) 456-7890</p>
+                <h4 class="text-lg font-bold mb-4">GoEserve</h4>
+                <p class="text-sm">Empowering businesses with AI-driven solutions for growth and efficiency.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
-                <ul>
-                    <li class="mb-2 hover:text-white cursor-pointer">About Us</li>
-                    <li class="mb-2 hover:text-white cursor-pointer">Services</li>
-                    <li class="mb-2 hover:text-white cursor-pointer">Contact</li>
-                    <li class="hover:text-white cursor-pointer">Patient Portal</li>
+                <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white">Terms of Service</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-bold text-lg mb-4">Follow Us</h4>
+                <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
                 <div class="flex space-x-4">
-                    <a href="#" class="hover:text-white transition duration-300">Facebook</a>
-                    <a href="#" class="hover:text-white transition duration-300">Twitter</a>
-                    <a href="#" class="hover:text-white transition duration-300">LinkedIn</a>
+                    <a href="#" class="hover:text-white">🐦</a>
+                    <a href="#" class="hover:text-white"></a>
+                    <a href="#" class="hover:text-white"></a>
+                    <a href="#" class="hover:text-white"></a>
                 </div>
             </div>
         </div>
         <div class="mt-12 text-center text-sm">
-            &copy; 2023 Goe Health. All rights reserved.
+            &copy; 2023 GoEserve. All rights reserved.
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
