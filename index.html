@@ -3,49 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoanFast - Your Fast Track to Funding</title>
-    <meta name="description" content="Get the loan you need, quickly and easily. LoanFast offers competitive rates and a seamless application process.">
+    <title>Goe Health - Your Partner in Wellness</title>
+    <meta name="description" content="Goe Health is dedicated to providing comprehensive and compassionate healthcare services to our community. Discover our expert care and commitment to your well-being.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-background {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .feature-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
 
     <!-- HERO SECTION -->
-    <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24 md:py-32">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Unlock Your Financial Future, Faster.</h1>
-            <p class="text-lg md:text-xl mb-8">LoanFast provides quick, transparent, and competitive loan solutions tailored to your needs. Apply in minutes, get funded in days.</p>
-            <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Get Started Today</a>
+    <section class="gradient-background text-white py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Empowering Your Journey to Optimal Health</h1>
+            <p class="text-lg sm:text-xl lg:text-2xl mb-8">Goe Health: Personalized care, advanced treatments, and a commitment to your well-being. Experience the difference of a healthcare partner that truly cares.</p>
+            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-100 transition duration-300 shadow-lg">Schedule Your Appointment</button>
         </div>
     </section>
 
     <!-- FEATURES SECTION -->
-    <section class="bg-gray-100 py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Why Choose LoanFast?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Comprehensive Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 ease-in-out hover:shadow-xl">
-                    <div class="text-4xl mb-4">🚀</div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Fast Approval</h3>
-                    <p class="text-gray-600">Our streamlined process means you get a decision on your loan application in record time.</p>
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
+                    <div class="feature-icon text-5xl mb-4 text-blue-600">❤️</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Preventive Care</h3>
+                    <p class="text-gray-600">Proactive health screenings and wellness programs designed to keep you healthy and prevent future issues.</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 ease-in-out hover:shadow-xl">
-                    <div class="text-4xl mb-4">💰</div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Competitive Rates</h3>
-                    <p class="text-gray-600">We offer some of the best interest rates in the industry, saving you money.</p>
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
+                    <div class="feature-icon text-5xl mb-4 text-green-600">⚕️</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Specialty Treatments</h3>
+                    <p class="text-gray-600">Expertise in various medical fields, offering advanced diagnostics and tailored treatment plans for your specific needs.</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 ease-in-out hover:shadow-xl">
-                    <div class="text-4xl mb-4">🔒</div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Secure & Transparent</h3>
-                    <p class="text-gray-600">Your data is safe with us, and our terms are always clear and upfront.</p>
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
+                    <div class="feature-icon text-5xl mb-4 text-purple-600">💬</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Patient Education</h3>
+                    <p class="text-gray-600">Empowering you with knowledge about your health, treatment options, and lifestyle choices for better outcomes.</p>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 ease-in-out hover:shadow-xl">
-                    <div class="text-4xl mb-4">💡</div>
-                    <h3 class="text-xl font-bold text-blue-900 mb-3">Personalized Service</h3>
-                    <p class="text-gray-600">Our team is dedicated to finding the right loan solution for your unique situation.</p>
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
+                    <div class="feature-icon text-5xl mb-4 text-indigo-600">🧑‍⚕️</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Medical Team</h3>
+                    <p class="text-gray-600">Our dedicated and experienced healthcare professionals are here to provide compassionate and effective care.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
+                    <div class="feature-icon text-5xl mb-4 text-teal-600">🏥</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Modern Facilities</h3>
+                    <p class="text-gray-600">State-of-the-art medical equipment and comfortable facilities to ensure the best possible patient experience.</p>
+                </div>
+
+                <div class="feature-card bg-white rounded-lg shadow-lg p-8 text-center hover-effect transition duration-300">
+                    <div class="feature-icon text-5xl mb-4 text-red-600">🤝</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Community Focus</h3>
+                    <p class="text-gray-600">We are deeply invested in the health and well-being of our local community, offering accessible and reliable care.</p>
                 </div>
 
             </div>
@@ -53,26 +80,43 @@
     </section>
 
     <!-- CALL TO ACTION SECTION -->
-    <section class="bg-blue-600 text-white py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Take the Next Step?</h2>
-            <p class="text-lg mb-8">Don't let financial hurdles hold you back. Apply now and experience the LoanFast difference.</p>
-            <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Apply For Your Loan</a>
+    <section class="gradient-background text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Prioritize Your Health?</h2>
+            <p class="text-lg sm:text-xl mb-8">Don't wait to take control of your well-being. Our team is ready to assist you with expert care and personalized attention. Your health journey starts now!</p>
+            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-100 transition duration-300 shadow-lg">Get Started Today</button>
         </div>
     </section>
 
     <!-- FOOTER SECTION -->
-    <footer class="bg-blue-900 text-gray-300 py-8">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <h3 class="text-lg font-bold text-white mb-2">LoanFast</h3>
-                <p>&copy; 2023 LoanFast. All rights reserved.</p>
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Goe Health</h4>
+                <p class="mb-2">123 Health Lane</p>
+                <p class="mb-2">Wellness City, WC 45678</p>
+                <p>(123) 456-7890</p>
             </div>
-            <div class="flex space-x-6">
-                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
-                <a href="#" class="hover:text-white transition duration-300">Contact Us</a>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
+                <ul>
+                    <li class="mb-2 hover:text-white cursor-pointer">About Us</li>
+                    <li class="mb-2 hover:text-white cursor-pointer">Services</li>
+                    <li class="mb-2 hover:text-white cursor-pointer">Contact</li>
+                    <li class="hover:text-white cursor-pointer">Patient Portal</li>
+                </ul>
             </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white transition duration-300">Facebook</a>
+                    <a href="#" class="hover:text-white transition duration-300">Twitter</a>
+                    <a href="#" class="hover:text-white transition duration-300">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 text-center text-sm">
+            &copy; 2023 Goe Health. All rights reserved.
         </div>
     </footer>
 
