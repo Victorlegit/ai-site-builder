@@ -3,95 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaaS Starter Kit</title>
-    <meta name="description" content="A modern, responsive landing page template for your SaaS product.">
+    <title>Modern Web Solutions</title>
+    <meta name="description" content="Discover innovative web solutions to elevate your online presence.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .gradient-background {
+        /* Custom gradient for hero section */
+        .hero-gradient {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-        .hover-effect:hover {
+        /* Subtle hover effect for cards */
+        .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
         }
-        .feature-icon {
-            width: 3rem; 
-            height: 3rem;
+        /* Button hover effect */
+        .btn-hover:hover {
+            filter: brightness(110%);
+            transition: all 0.2s ease;
         }
     </style>
 </head>
 <body class="font-sans antialiased">
 
     <!-- HERO SECTION -->
-    <section class="gradient-background text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4">
-                Launch Your SaaS Idea Faster
-            </h1>
-            <p class="text-xl sm:text-2xl mb-8">
-                The ultimate starter kit to build and scale your software as a service product.
-            </p>
-            <button class="bg-white text-purple-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+    <section class="relative hero-gradient text-white py-20 px-4 md:px-8 lg:px-16 min-h-[60vh] flex items-center justify-center">
+        <div class="container mx-auto text-center z-10">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight">Innovate. Elevate. Dominate.</h1>
+            <p class="text-xl md:text-2xl lg:text-3xl font-light mb-8">Your vision, brought to life with cutting-edge web technology.</p>
+            <button class="btn-hover bg-white text-indigo-600 font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-gray-100">
                 Get Started Today
             </button>
         </div>
     </section>
 
     <!-- FEATURES SECTION -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800">Powerful Features</h2>
-                <p class="text-lg text-gray-600 mt-2">Everything you need to build a successful SaaS.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover-effect transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <svg class="feature-icon text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h.01M6 20h.01M12 20h.01M18 20h.01M4 4h16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path></svg>
-                        <h3 class="text-2xl font-bold text-gray-800 ml-4">Scalable Architecture</h3>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed">Built on a robust and scalable foundation to grow with your user base.</p>
+    <section class="py-20 px-4 md:px-8 lg:px-16 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Unlock Your Potential</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-5xl mb-6 text-indigo-600">🚀</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Blazing Fast Performance</h3>
+                    <p class="text-gray-600">Experience unparalleled speed and responsiveness with our optimized solutions.</p>
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover-effect transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <svg class="feature-icon text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 00-18 0 9 9 0 0018 0zM12 5a7 7 0 100 14 7 7 0 000-14z"></path></svg>
-                        <h3 class="text-2xl font-bold text-gray-800 ml-4">User Management</h3>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed">Secure and intuitive user authentication and profile management.</p>
+
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-5xl mb-6 text-purple-600">💡</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Intuitive Design</h3>
+                    <p class="text-gray-600">User-centric design that delights your audience and drives engagement.</p>
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover-effect transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <svg class="feature-icon text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <h3 class="text-2xl font-bold text-gray-800 ml-4">Payment Integration</h3>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed">Seamless integration with popular payment gateways like Stripe and PayPal.</p>
+
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-5xl mb-6 text-blue-600">🔒</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Secure & Reliable</h3>
+                    <p class="text-gray-600">Robust security measures to protect your data and ensure uptime.</p>
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover-effect transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <svg class="feature-icon text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l2-2 9 9-9 9-2-2 7-7-7-7zM3 16h12v2H3v-2z"></path></svg>
-                        <h3 class="text-2xl font-bold text-gray-800 ml-4">API Access</h3>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed">Unlock powerful capabilities with our well-documented RESTful API.</p>
+
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-5xl mb-6 text-green-600">📈</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Scalable Architecture</h3>
+                    <p class="text-gray-600">Solutions that grow with your business, adapting to your needs.</p>
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover-effect transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <svg class="feature-icon text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3a9 9 0 104.312 15.702c.176-.142.332-.295.471-.455a7.5 7.5 0 00-5.257-7.165m-3.796 0v1.146L9.003 12m-3.796 0h1.146L7.5 9.796m-3.796 0v3.796h1.146M11 19h10a2 2 0 002-2V5a2 2 0 00-2-2H11a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        <h3 class="text-2xl font-bold text-gray-800 ml-4">Real-time Analytics</h3>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed">Gain insights into your product's performance with live data dashboards.</p>
+
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-5xl mb-6 text-red-600">🌐</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Global Reach</h3>
+                    <p class="text-gray-600">Connect with your audience worldwide with optimized global deployment.</p>
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-lg p-8 hover-effect transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <svg class="feature-icon text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.315c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 2.027.524 2.262.843a1.724 1.724 0 002.739.368c.926-.926 2.066.187 2.739.863.693.693 1.717 1.035 2.739.863.926-.187.926 1.066.201 1.402l-1.336 1.336c-1.006 1.006-1.696 2.388-1.947 3.767-.251 1.379-.187 2.756.364 4.047.436 1.29.972 2.254 1.58 3.246.593 1.013.95 2.17.95 3.373 0 1.203-.357 2.361-.95 3.373-.608.992-1.144 1.956-1.58 3.246-.551 1.291-.615 2.668-.364 4.047.251 1.379.941 2.757 1.947 3.767l1.336 1.336c.201.201.201.524-.001.739-.926.926-2.066.187-2.739.863-.693.693-1.717 1.035-2.739.863-.926-.187-1.756-.854-2.001-1.402-.251-1.379-.787-2.254-1.58-3.246-.608-.992-1.144-1.956-1.58-3.373 0-1.203.357-2.361.95-3.373.436-1.29.972-2.254 1.58-3.246.593-1.013.95-2.17.95-3.373 0-1.203-.357-2.361-.95-3.373-.608-.992-1.144-1.956-1.58-3.246-.551-1.291-.615-2.668-.364-4.047-.251-1.379-.941-2.757-1.947-3.767l-1.336-1.336c-.201-.201-.201-.524.001-.739.926-.926 2.066-.187 2.739-.863.693-.693 1.717-1.035 2.739-.863.926.187 1.756.854 2.001 1.402z"></path></svg>
-                        <h3 class="text-2xl font-bold text-gray-800 ml-4">Customizable UI</h3>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed">Adapt the interface to match your brand's unique identity.</p>
+
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="text-5xl mb-6 text-yellow-600">💬</div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Seamless Integration</h3>
+                    <p class="text-gray-600">Effortlessly integrate with your existing tools and platforms.</p>
                 </div>
 
             </div>
@@ -99,48 +84,29 @@
     </section>
 
     <!-- CALL TO ACTION SECTION -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-purple-600 text-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">
-                Ready to Build Your Dream SaaS?
-            </h2>
-            <p class="text-lg sm:text-xl mb-8">
-                Don't wait any longer. Start building your innovative SaaS product today and reach your audience faster.
-            </p>
-            <button class="bg-white text-purple-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
-                Start Building Now
+    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 px-4 md:px-8 lg:px-16 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl md:text-2xl font-light mb-10">Don't wait for the future. Build it. Contact us now for a free consultation!</p>
+            <button class="btn-hover bg-white text-indigo-600 font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-gray-100">
+                Request a Demo
             </button>
         </div>
     </section>
 
     <!-- FOOTER SECTION -->
-    <footer class="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <h3 class="text-lg font-bold text-white mb-4">Company</h3>
-                <ul>
-                    <li><a href="#" class="hover:text-white transition duration-300">About Us</a></li>
-                    <li><a href="#" class="hover:text-white transition duration-300">Careers</a></li>
-                    <li><a href="#" class="hover:text-white transition duration-300">Blog</a></li>
-                </ul>
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition">About Us</a>
+                <a href="#" class="hover:text-white transition">Services</a>
+                <a href="#" class="hover:text-white transition">Contact</a>
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
             </div>
-            <div>
-                <h3 class="text-lg font-bold text-white mb-4">Resources</h3>
-                <ul>
-                    <li><a href="#" class="hover:text-white transition duration-300">Documentation</a></li>
-                    <li><a href="#" class="hover:text-white transition duration-300">Support</a></li>
-                    <li><a href="#" class="hover:text-white transition duration-300">Terms of Service</a></li>
-                    <li><a href="#" class="hover:text-white transition duration-300">Privacy Policy</a></li>
-                </ul>
+            <div class="text-center md:text-right">
+                <p>&copy; 2023 Modern Web Solutions. All rights reserved.</p>
+                <p class="mt-1">Crafting the future of the web, one project at a time.</p>
             </div>
-            <div>
-                <h3 class="text-lg font-bold text-white mb-4">Contact</h3>
-                <p>Email: <a href="mailto:support@saasstarter.com" class="hover:text-white transition duration-300">support@saasstarter.com</a></p>
-                <p>Phone: +1 (555) 123-4567</p>
-            </div>
-        </div>
-        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
-            &copy; 2023 SaaS Starter Kit. All rights reserved.
         </div>
     </footer>
 
